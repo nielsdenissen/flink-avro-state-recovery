@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/nielsdenissen/flink-avro-state-recovery.svg?branch=master)](https://travis-ci.org/nielsdenissen/flink-avro-state-recovery)
+
 # Flink Avro State Recovery
 
 Example project on how to do state recovery in Apache Flink using Apache Avro.
