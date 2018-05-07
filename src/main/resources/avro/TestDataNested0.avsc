@@ -1,0 +1,8 @@
+{
+  "type": "record",
+  "namespace": "com.nielsdenissen.flink.data",
+  "name": "TestDataNested",
+  "fields": [
+    { "name": "entry",     "type": ["null", "int"],   "default": null }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "record",
+  "namespace": "com.nielsdenissen.flink.data",
+  "name": "TestData",
+  "fields": [
+    { "name": "string",       "type": ["null", "string"],                             "default": null },
+    { "name": "int",          "type": ["null", "int"],                                "default": null },
+    { "name": "bigDecimal",   "type": ["null", "string"],                             "default": null },
+    { "name": "instant",      "type": "long",     "logicalType": "timestamp-millis",  "default": 0 },
+    { "name": "nested",       "type": ["null", {
+      "type": "record",
+      "namespace": "com.nielsdenissen.flink.data",
+      "name": "TestDataNested",
+      "fields": [
+        { "name": "entry",     "type": ["null", "int"],   "default": null }
+      ]
+    }],       "default": null },
+    { "name": "option",       "type": ["null", "string"],                             "default": null },
+    { "name": "list",         "type": ["null", {"type": "array", "items": "string"}], "default": null },
+    { "name": "map",          "type": ["null", { "type": "map", "values": "com.nielsdenissen.flink.data.TestDataNested"}], "default": null }
+  ]
+}
